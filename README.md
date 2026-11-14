@@ -66,7 +66,7 @@ PinDa 是面向跨校园师生用户的互助平台，两大板块：
 需要 [Node.js](https://nodejs.org)（可选，用于启动服务与真实发信）。
 
 ```bash
-git clone https://github.com/<你的用户名>/PinDa.git
+git clone https://github.com/Simon-kch/PinDa.git
 cd PinDa
 node server.js
 ```
