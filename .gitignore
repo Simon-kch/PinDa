@@ -1,0 +1,17 @@
+# 本机凭据（含邮箱授权码，绝不提交）
+config.json
+config.local.json
+.env
+
+# 运行时产物
+node_modules/
+*.log
+npm-debug.log*
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp

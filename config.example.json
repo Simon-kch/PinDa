@@ -1,0 +1,33 @@
+{
+  "_说明": "复制本文件为 config.json 并填写下面的字段，然后重新运行「启动本地预览.cmd」即可真实发信。密码位置请填「授权码」，不是邮箱登录密码。",
+  "_可选字段": {
+    "lan": "true = 同一 Wi-Fi 下的设备可以访问（默认）；false = 只允许本机访问",
+    "dailyTotal": "全站每天最多发出多少封验证码邮件，防止被刷爆你的邮箱（默认 300）",
+    "allowedOrigins": "来源白名单，例如 [\"https://pinda.你的域名.com\"]；留空表示不限制（本地与临时穿透需要留空）"
+  },
+  "_常见配置": {
+    "QQ邮箱": { "host": "smtp.qq.com", "port": 465, "secure": true, "说明": "在 QQ 邮箱 → 设置 → 账号 → 开启 IMAP/SMTP 服务，生成 16 位授权码" },
+    "163邮箱": { "host": "smtp.163.com", "port": 465, "secure": true, "说明": "设置 → POP3/SMTP/IMAP → 开启服务并获取授权码" },
+    "企业微信/腾讯企业邮": { "host": "smtp.exmail.qq.com", "port": 465, "secure": true },
+    "Outlook/Microsoft365": { "host": "smtp.office365.com", "port": 587, "secure": false, "说明": "使用 STARTTLS，密码用应用密码" },
+    "Gmail": { "host": "smtp.gmail.com", "port": 465, "secure": true, "说明": "需要开启两步验证并使用应用专用密码" }
+  },
+  "smtp": {
+    "host": "smtp.qq.com",
+    "port": 465,
+    "secure": true,
+    "user": "你的邮箱@qq.com",
+    "pass": "邮箱授权码（16 位，不是登录密码）",
+    "from": "你的邮箱@qq.com",
+    "fromName": "PinDa 校园互助平台"
+  },
+  "allowedDomains": ["*.edu.cn", "*.edu"],
+  "lan": true,
+  "dailyTotal": 300,
+  "allowedOrigins": [],
+  "codeTtlMinutes": 10,
+  "resendSeconds": 60,
+  "dailyPerEmail": 10,
+  "hourlyPerIp": 30,
+  "maxAttempts": 5
+}

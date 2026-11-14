@@ -1,0 +1,15 @@
+# 统一换行，避免 Windows 上克隆后 .cmd 变成 LF 导致双击不执行
+* text=auto
+
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+*.js   text eol=lf
+*.css  text eol=lf
+*.html text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+
+*.jpg  binary
+*.png  binary
+*.zip  binary
